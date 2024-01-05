@@ -5,7 +5,7 @@ slide_id: 0
 ---
 
 <p class="lead">
-The WSSCI Fall Technical Meeting will be held on October 16-17, 2023 in Northridge, CA.
+The WSSCI Spring Technical Meeting will be held on 4-5 March 2024 in Salt Lake City, Utah.
 </p>
 
 #### Conference Location

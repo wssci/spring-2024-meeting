@@ -4,7 +4,7 @@ layout: page
 slide_id: 2
 ---
 
-Extended abstract are solicited for the 2023 Fall Technical Meeting of the Western States Section of The Combustion Institute.
+Extended abstract are solicited for the 2024 Spring Technical Meeting of the Western States Section of The Combustion Institute.
 
 Papers should be submitted to one of the following colloquium topics:
 
