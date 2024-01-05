@@ -1,0 +1,131 @@
+full_title: WSSCI 2024 Spring Technical Meeting
+short_title: WSSCI S2024
+email: webmaster@wssci.us
+program_chair_email: bp@ucicl.uci.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Spring Technical Meeting of the Western States Section of The Combustion Institute
+location: Salt Lake City, UT, USA
+date: 4-5 March 2024
+program_link: 
+
+logo_path: ./assets/images/WSSCI-Logo-web.png
+slideshow:
+#  - id: 0
+#    image_path: ./assets/images/northridge.jpg
+#    description: California State University, Northridge
+#    photographer_name:
+#    photographer_link:
+#    active: true
+#  - id: 1
+#    image_path: ./assets/images/csun_library.jpg
+#    description: Library at California State University, Northridge
+#    photographer_name:
+#    photographer_link:
+#    active: false
+  # - id: 1
+  #   image_path: ./assets/images/slideshow/image1.jpg
+  #   description: Huntington Library & Botanical Gardens - Pasadena, California
+  #   photographer_name: Chris Goldberg
+  #   photographer_link: https://www.flickr.com/photos/chrisgold/
+  # - id: 2
+  #   image_path: ./assets/images/slideshow/image2.jpg
+  #   description: California Science Center, Los Angeles
+  #   photographer_name: Fabio Achilli
+  #   photographer_link: https://www.flickr.com/photos/travelourplanet/
+  # - id: 3
+  #   image_path: ./assets/images/slideshow/image3.jpg
+  #   description: Image 17540 (USA/California/Los Angeles County/Pasadena/CalTech)
+  #   photographer_name: Vlad Butsky
+  #   photographer_link: https://www.flickr.com/photos/butsky/
+  # - id: 4
+  #   image_path: ./assets/images/slideshow/image4.jpg
+  #   description: Campus of the California Institute of Technology
+  #   photographer_name: Alan Cordova
+  #   photographer_link: https://www.flickr.com/photos/acordova/
+
+deadlines:
+ - date: 2023-12-14
+   timezone: 11:59PM ET
+   text: Extended abstract submission opens
+   pass_due: True
+ - date: 2024-02-01
+   timezone: 11:59PM ET
+   text: Extended abstract submission deadline
+   pass_due: False
+ - date: 2024-02-05
+   timezone: 11:59PM ET
+   text: Extended abstract decision notification
+   pass_due: False
+ - date: 2024-02-02
+   timezone: 11:59PM ET
+   text: Early registration deadline
+   pass_due: False
+#  - date: 2023-09-15
+#    timezone: 11:59PM PT
+#    text: Student travel award deadline
+#    pass_due: True
+ - date: 2024-02-29
+   timezone: 11:59PM ET
+   text: Online registration deadline
+   pass_due: False
+#  - date: 2019-09-13
+#    timezone: 11:59PM PDT
+#    text: Student travel award deadline
+#    pass_due: False
+#  - date: 2019-09-30
+#    timezone: 11:59PM PDT
+#    text: Last day to book discounted hotel room
+#    pass_due: False
+#  - date: 2019-10-09
+#    timezone: 11:59PM PDT
+#    text: Late registration deadline
+#    pass_due: False
+
+news:
+  - date: 2024-01-05
+    text: Website online
+  # - date: 2023-08-16
+  #   text: JPL tour and hotel information available
+  # - date: 2023-08-16
+  #   text: Extended abstract deadline extended
+  # - date: 2023-08-29
+  #   text: Student travel award information published
+  # - date: 2023-10-11
+  #   text: Draft program published
+
+sponsors:
+#  - name: Caltech Division of Engineering and Applied Sciences
+#    url: http://eas.caltech.edu
+#    logo_path: ./assets/images/Caltech-EAS-logo.png
+#    level: platinum
+#  - name: CSU Northridge College of Engineering and Computer Science
+#    url: https://www.csun.edu/engineering-computer-science
+#    logo_path: ./assets/images/sponsors/ecs_horizontal.jpg
+#    level: sponsor
+#  - name: CSU Northridge Department of Mechanical Engineering
+#    url: http://www.ecs.csun.edu/me/
+#    logo_path: ./assets/images/sponsors/ecs_meche.png
+#    level: sponsor
+
+social_media:
+  facebook_link:
+  twitter_link:
+
+program_chairs:
+  - name: Bihter Padak
+    org: University of California, Irvine
+    homepage: https://engineering.uci.edu/users/bihter-padak
+    email: bp@ucicl.uci.edu
+
+host_committee:
+  - name: Alex G. Novoselov
+    org: University of Utah
+    email: alex.novoselov@utah.edu 
+
+technical_program_committee:
+  # put list of people on technical committee here
+
+webmaster:
+  - name: Kyle Niemeyer
+    org: Oregon State University
+    homepage: https://niemeyer-research-group.github.io

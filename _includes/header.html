@@ -1,0 +1,134 @@
+<header class="site-header">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+        <h2 class="text-center mt-0">{{ site.data.conference.full_title }}</h2>
+      </div>
+    </div>
+
+    <div class="row">
+
+        <!--conference info-->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-5 col-xl-4 offset-xl-1">
+
+            <div class="jumbotron">
+                <img class="img-fluid" src="{{ site.data.conference.logo_path }}">
+
+                <p class="text-center mt-4">{{ site.data.conference.date }}</p>
+                <p class="text-center mb-0">{{ site.data.conference.location }}</p>
+            </div>
+
+        </div>
+
+        <!--slide show-->
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-7 col-xl-6">
+
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+            {% if site.data.conference.slideshow %}
+            <div class="carousel-inner" role="listbox">
+              {% assign min = 0 %}
+              {% assign max = site.data.conference.slideshow.size %}
+              {% assign diff = max | minus: min %}
+              {% assign slide_id = "now" | date: "%N" | modulo: diff | plus: min %}
+
+              {% for slide in site.data.conference.slideshow %}
+
+              {% if slide_id == slide.id %}
+              <div class="carousel-item active">
+              {% else %}
+              <div class="carousel-item">
+              {% endif %}
+                  <!--<img class="img-fluid" src="{{ site.baseurl }}{{ slide.image_path }}" alt="{{ slide.description }}">-->
+                <img class="img-fluid" src="{{ slide.image_path }}" alt="{{ slide.description }}">
+                <div class="carousel-caption d-none d-md-block text-muted">
+                  <p class="align-bottom"> {{ slide.description }}, by <a href="{{ slide.photographer_link }}">{{slide.photographer_name}}</a>,
+                        under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/">Creative Commons license</a>.
+                  </p>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+          {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <!--navbar-->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+
+          <nav class="nav navbar-expand-lg navbar-dark bg-dark my-2">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+              <ul class="navbar-nav mr-auto">
+                  {% for nav in site.data.site-navigation.navbar %}
+                  {% if nav.visible %}
+                  {% if page.url == nav.path %}
+                  <li class="nav-item active">
+                    <a class="nav-link m-1" href=".{{ nav.path }}">
+                      {{ nav.label | escape }}
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  {% else %}
+                    <li class="nav-item">
+                      <a class="nav-link m-1" href=".{{ nav.path }}">
+                        {{ nav.label | escape }}
+                      </a>
+                    </li>
+                  {% endif %}
+                  {% endif %}
+                  {% endfor %}
+
+                  <!--
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle m-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Awards
+                    </a>
+
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      {% for nav in site.data.site-navigation.awards %}
+                      <a class="dropdown-item" href="./{{ nav.path }}">
+                          {{ nav.label | escape }}
+                      </a>
+                      {% endfor %}
+                    </div>
+                  </li>
+                  -->
+
+                </ul>
+
+              <ul class="navbar-nav ml-auto">
+
+                  {% if site.data.conference.social_media.facebook_link != nil %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ site.data.conference.social_media.facebook_link }}">
+                      <span class="fa-stack">
+                        <i class="fa fa-facebook-square fa-stack-1x"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {% endif %}
+
+                  {% if site.data.conference.social_media.twitter_link != nil %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ site.data.conference.social_media.twitter_link }}">
+                      <span class="fa-stack">
+                        <i class="fa fa-twitter-square fa-stack-1x"></i>
+                      </span>
+                    </a>
+                  </li>
+                  {% endif %}
+              </ul>
+            </div>
+          </nav>
+
+        </div>
+
+    </div>
+</header>

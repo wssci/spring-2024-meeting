@@ -1,0 +1,57 @@
+navbar:
+  - id: 0
+    label: Home
+    path: /
+    visible: True
+  - id: 1
+    label: Sponsors
+    path: /sponsors.html
+    visible: True
+  - id: 2
+    label: Call for Papers
+    path: /cfp.html
+    visible: True
+  - id: 3
+    label: Submission
+    path: /submission.html
+    visible: True
+  - id: 4
+    label: Travel
+    path: /travel.html
+    visible: True
+  - id: 5
+    label: Registration
+    path: /registration.html
+    visible: True
+  - id: 6
+    label: Program
+    path: /program.html
+    visible: True
+  - id: 7
+    label: Code of Conduct
+    path: /codeofconduct.html
+    visible: True
+  - id: 8
+    label: Activities
+    path: /activities.html
+    visible: True
+  - id: 9
+    label: Student Travel Awards
+    path: /student-travel.html
+    visible: True
+
+
+#awards:
+#  - id: 0
+#    label: Early Career Investigator Award
+#    path: early-career-award.html
+#  - id: 1
+#    label: Art Competition Award
+#    path: art-competition.html
+#  - id: 0
+#    label: Student Travel Awards
+#    path: student-travel.html
+#
+#events:
+#  - id: 0
+#    label:

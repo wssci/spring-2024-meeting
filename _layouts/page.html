@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en " }}">
+
+{% include head.html %}
+
+<body>
+
+    <div class="container-fluid">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 offset-xl-1 col-xl-10 offset-xl-1">
+        {% include header.html %}
+
+        <div class="row mt-xs-0 mt-sm-0 mt-md-1 mt-lg-2 mt-xl-2 mb-xs-2 mb-sm-2">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+
+                <h1>{{ page.title }}</h1>
+
+                {{ content }}
+
+                {% include contact-us.html %}
+            </div>
+        </div>
+
+        {% include footer.html %}
+        </div>
+    </div>
+
+  {% include foot.html %}
+
+</body>
+
+</html>

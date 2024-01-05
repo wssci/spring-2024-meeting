@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-10 offset-xl-1">
+        {% if site.data.conference.sponsors == nil %}
+        <div class="alert alert-warning rounded text-center m-1">
+            <p>TBA</p>
+        </div>
+        {% else %}
+
+            <h2 class="row">Platinum Sponsors</h2>
+
+            <div class="row">
+            {% assign platinumsponsors = site.data.conference.sponsors | where: "level","platinum" %}
+            {% for sponsor in platinumsponsors %}
+            <div class="col-sm text-left sponsor">
+                <figure class="figure d-block float-left">
+                  <a href="{{ sponsor.url }}">
+                  <img class="figure-img img-fluid" src="{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
+                  </a>
+                  <figcaption class="figure-caption">{{ sponsor.name }}</figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+            </div>
+
+          <div class="row my-5"></div>
+
+            <h2 class="row">Gold Sponsors</h2>
+
+            <div class="row">
+            {% assign goldsponsors = site.data.conference.sponsors | where: "level","gold" %}
+            {% for sponsor in goldsponsors %}
+            <div class="col-sm text-left sponsor">
+                <figure class="figure d-block float-left">
+                  <a href="{{ sponsor.url }}">
+                    <img class="figure-img img-fluid" src="{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
+                  </a>
+                  <figcaption class="figure-caption">{{ sponsor.name }}</figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+            </div>
+
+          <div class="row my-5"></div>
+
+          <h2 class="row">Sponsors</h2>
+
+            <div class="row justify-content-center">
+            {% assign sponsors = site.data.conference.sponsors | where: "level","sponsor" %}
+            {% for sponsor in sponsors %}
+            <div class="col-sm text-left sponsor">
+                <figure class="figure">
+                  <a href="{{ sponsor.url }}">
+                  <img class="figure-img img-fluid" src="{{ sponsor.logo_path }}" alt="{{ sponsor.name }}">
+                  </a>
+                  <figcaption class="figure-caption">{{ sponsor.name }}</figcaption>
+                </figure>
+            </div>
+            {% endfor %}
+            </div>
+
+          <div class="row my-5"></div>
+
+        {% endif %}
+    </div>
+</div>
