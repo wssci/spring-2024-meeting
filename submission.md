@@ -20,7 +20,7 @@ Only electronic submissions in PDF will be accepted. Submitted papers must be wr
 
 Papers should use the **provided templates**:
 
-- [<i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i>LaTeX template](./assets/wssci-latex-template-0.3.1.zip)
+- [<i class="fa fa-file-text-o fa-fw" aria-hidden="true"></i>LaTeX template](./assets/wssci-latex-template-0.3.2.zip)
 - [<i class="fa fa-file-word-o fa-fw" aria-hidden="true"></i>Word template](./assets/2024-WSSCI-Spring_PaperTemplate.docx)
 
 Note that at least one author of each paper accepted for presentation must be registered to attend the meeting.
