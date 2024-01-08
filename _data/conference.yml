@@ -10,12 +10,12 @@ program_link:
 
 logo_path: ./assets/images/WSSCI-Logo-web.png
 slideshow:
-#  - id: 0
-#    image_path: ./assets/images/northridge.jpg
-#    description: California State University, Northridge
-#    photographer_name:
-#    photographer_link:
-#    active: true
+ - id: 0
+   image_path: ./assets/images/campus_overview_fall_2400x964.jpg
+   description: University of Utah
+   photographer_name:
+   photographer_link:
+   active: true
 #  - id: 1
 #    image_path: ./assets/images/csun_library.jpg
 #    description: Library at California State University, Northridge
