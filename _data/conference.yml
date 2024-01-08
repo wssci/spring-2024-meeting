@@ -94,18 +94,18 @@ news:
   #   text: Draft program published
 
 sponsors:
-#  - name: Caltech Division of Engineering and Applied Sciences
-#    url: http://eas.caltech.edu
-#    logo_path: ./assets/images/Caltech-EAS-logo.png
-#    level: platinum
-#  - name: CSU Northridge College of Engineering and Computer Science
-#    url: https://www.csun.edu/engineering-computer-science
-#    logo_path: ./assets/images/sponsors/ecs_horizontal.jpg
-#    level: sponsor
-#  - name: CSU Northridge Department of Mechanical Engineering
-#    url: http://www.ecs.csun.edu/me/
-#    logo_path: ./assets/images/sponsors/ecs_meche.png
-#    level: sponsor
+ - name: Univ. of Utah John and Marcia Price College of Engineering
+   url: https://www.price.utah.edu
+   logo_path: ./assets/images/sponsors/ENG_Logo_Price_Final_HEX.svg
+   level: sponsor
+ - name: Univ. of Utah Department of Mechanical Engineering
+   url: https://www.mech.utah.edu
+   logo_path: ./assets/images/sponsors/ME_Logo_2023.svg
+   level: sponsor
+ - name: Univ. of Utah Department of Chemical Engineering
+   url: https://www.che.utah.edu
+   logo_path: ./assets/images/sponsors/CHE_Logo_2023.svg
+   level: sponsor
 
 social_media:
   facebook_link:
