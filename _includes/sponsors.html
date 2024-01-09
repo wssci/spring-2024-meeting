@@ -6,10 +6,11 @@
         </div>
         {% else %}
 
+            {% assign platinumsponsors = site.data.conference.sponsors | where: "level","platinum" %}
+            {% unless platinumsponsors == empty %}
             <h2 class="row">Platinum Sponsors</h2>
 
             <div class="row">
-            {% assign platinumsponsors = site.data.conference.sponsors | where: "level","platinum" %}
             {% for sponsor in platinumsponsors %}
             <div class="col-sm text-left sponsor">
                 <figure class="figure d-block float-left">
@@ -21,13 +22,16 @@
             </div>
             {% endfor %}
             </div>
+            {% endunless %}
 
+          
+          {% assign goldsponsors = site.data.conference.sponsors | where: "level","gold" %}
+          {% unless goldsponsors == empty %}
           <div class="row my-5"></div>
 
             <h2 class="row">Gold Sponsors</h2>
 
             <div class="row">
-            {% assign goldsponsors = site.data.conference.sponsors | where: "level","gold" %}
             {% for sponsor in goldsponsors %}
             <div class="col-sm text-left sponsor">
                 <figure class="figure d-block float-left">
@@ -39,13 +43,17 @@
             </div>
             {% endfor %}
             </div>
+          {% endunless %}
 
+          {% assign sponsors = site.data.conference.sponsors | where: "level","sponsor" %}
+          {% unless sponsors == empty %}
           <div class="row my-5"></div>
-
+          
+          {% unless platinumsponsors == empty and goldsponsors == empty %}
           <h2 class="row">Sponsors</h2>
+          {% endunless %}
 
             <div class="row justify-content-center">
-            {% assign sponsors = site.data.conference.sponsors | where: "level","sponsor" %}
             {% for sponsor in sponsors %}
             <div class="col-sm text-left sponsor">
                 <figure class="figure">
@@ -57,6 +65,7 @@
             </div>
             {% endfor %}
             </div>
+          {% endunless %}
 
           <div class="row my-5"></div>
 
