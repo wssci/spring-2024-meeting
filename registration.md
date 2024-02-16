@@ -21,5 +21,5 @@ The difference in registration fees between members and non-members is used to r
 
 #### Deadlines
 
-- Early registration deadline: 2 February 2024
+- Early registration deadline: 7 February 2024
 - Online registration deadline: 29 February 2024
